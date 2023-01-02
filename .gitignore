@@ -10,3 +10,4 @@ coverage
 .vscode
 pkg
 assets
+package-lock.json
