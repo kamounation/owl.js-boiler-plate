@@ -84,5 +84,10 @@
         "src/http",
         "src/logs",
         "src/tests"
-    ]
+    ],
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    }
 }
