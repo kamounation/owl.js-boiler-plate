@@ -75,8 +75,8 @@
         ]
     },
     "include": [
-        "src/**/*.ts",
-        "src/**/*.json",
+        "src/",
+        "src/",
         ".env"
     ],
     "exclude": [

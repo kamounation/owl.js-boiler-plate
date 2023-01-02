@@ -1,26 +1,11 @@
-import OwlFactory from 'owl-factory';
+import { ENV, PORT } from "configs";
+import mongoConfig from "configs/db";
+import helmet from "helmet";
+import OwlFactory from "owl-factory";
+import ExamleRoute from "routes/example.routes";
 
-class TestController {
-  getMsg = OwlFactory.catchAsync(async (req, res) => {
-    res.send('Omor you don reach route oo');
-  });
-}
+const server = new OwlFactory([new ExamleRoute()], process.env.PORT || PORT, ENV, {mongodbConfig: mongoConfig, otherDbConfig: null});
 
-class TestRoute {
-  path = '/test';
+server.app.use(helmet());
 
-  router = OwlFactory.Router();
-
-  controller = new TestController();
-
-  constructor() {
-    this.initializeRoutes();
-  }
-
-  initializeRoutes() {
-    this.router.get(`${this.path}`, this.controller.getMsg);
-  }
-}
-
-const server = new OwlFactory([new TestRoute()]);
 server.listen();
