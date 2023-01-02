@@ -2,7 +2,11 @@ import OwlFactory from 'owl-factory';
 
 class TestController {
   getMsg = OwlFactory.catchAsync(async (req, res) => {
-    res.send('Omor you don reach route oo');
+    res.json({
+      success: true,
+      message: "Welcome to this endpoint",
+      isOperational: true
+    })
   });
 }
 
