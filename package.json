@@ -20,14 +20,14 @@
     "owl.js",
     "node sugar-coat"
   ],
-  "author": "",
+  "author": "Utibeabasi Ekong <https://github.com/Xlaez>",
   "license": "MIT",
   "dependencies": {
     "class-transformer": "^0.5.1",
     "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
     "helmet": "^6.0.1",
-    "owl-factory": "^0.1.0"
+    "owl-factory": "^0.1.1"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.57",
