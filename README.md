@@ -13,6 +13,7 @@ Or
 ```bash
 yarn install
 ```
+
 Or
 
 ```bash
@@ -131,7 +132,7 @@ controller = catchAsync(async (req, res, next) => {
   // this error will be forwarded to the error handling middleware
   throw new Error('Something wrong happened');
   //or
-  return(next('Something Wrong happened'))
+  return next('Something Wrong happened'))
 });
 ```
 
@@ -170,7 +171,7 @@ Import the logger from `logger`. It is using the [Winston](https://github.com/wi
 Logging should be done according to the following severity levels (ascending order from most important to least important):
 
 ```javascript
-import {logger} from'owl-factory';
+import { logger } from 'owl-factory';
 
 logger.error('message'); // level 0
 logger.warn('message'); // level 1
