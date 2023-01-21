@@ -27,7 +27,7 @@
     "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
     "helmet": "^6.0.1",
-    "owl-factory": "^0.1.1"
+    "owl-factory": "^0.1.2"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.57",
